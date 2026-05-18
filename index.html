@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAMINO — Sahar</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'6'%20fill%3D'%2305050A'%2F%3E%3Ctext%20x%3D'32'%20y%3D'50'%20font-size%3D'46'%20font-family%3D'Georgia%2Cserif'%20fill%3D'%23B8955A'%20text-anchor%3D'middle'%3ET%3C%2Ftext%3E%3C%2Fsvg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <canvas id="starfield"></canvas>
+
+ 
+  <nav id="nav">
+    <span class="nav-wordmark">TAMINO</span>
+    <ul>
+      <li><a href="#album">Album</a></li>
+      <li><a href="#tracklist">Tracklist</a></li>
+      <li><a href="#discographie">Discographie</a></li>
+    </ul>
+  </nav>
+
+  
+  <section id="hero">
+    <video id="hero-video" autoplay muted loop playsinline>
+      <source src="assets/clip.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <h1 id="hero-title"></h1>
+      <p id="hero-sub">Sahar &mdash; 2022</p>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  
+  <section id="album" class="reveal">
+    <div class="album-glow"></div>
+    <div class="album-layout">
+      <div class="cover-wrap" id="coverWrap">
+        <div class="glare"></div>
+        <img src="assets/album-cover-tamino.jpeg" alt="Sahar — Tamino" class="cover-img" id="coverImg" />
+      </div>
+      <div class="album-meta">
+        <span class="album-artist-label">Tamino</span>
+        <h2 class="album-name">Sahar</h2>
+        <span class="album-year">2022</span>
+        <p class="album-description">
+          Deuxième album studio de Tamino. Un disque de renaissance,<br />
+          de lumière fragile et d'obscurité fertile.
+        </p>
+        <a href="https://open.spotify.com/album/2MsR68gI6TNZSztsRYgs6p" target="_blank" rel="noopener" class="spotify-link">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Écouter sur Spotify
+        </a>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+  <section id="tracklist">
+    <div class="tracklist-inner">
+      <h2 class="section-label reveal">Tracklist</h2>
+      <ol class="track-list">
+
+        <li class="track reveal" data-track-id="5n51kLSHRYV06VezhVnucf">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Cinnamon">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">01</span>
+            <span class="track-name">Cinnamon</span>
+            <span class="track-dur">4:02</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="1lgX1Dhsnn4G8UJjw0UQhu">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Indigo Night">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">02</span>
+            <span class="track-name">Indigo Night</span>
+            <span class="track-dur">3:54</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="6g7cJdDNjCDgqcpVGLzYhh">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Sunflower">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">03</span>
+            <span class="track-name">Sunflower</span>
+            <span class="track-dur">3:38</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="5lMwhuAYhD2EEeVzdiU8aO">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Persephone">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">04</span>
+            <span class="track-name">Persephone</span>
+            <span class="track-dur">4:12</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="7F1wUwiqS0wHVCEOsKYWjm">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Cigar">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">05</span>
+            <span class="track-name">Cigar</span>
+            <span class="track-dur">3:26</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="2UerZTFYCOEh07o0qfn2FL">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Tummy">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">06</span>
+            <span class="track-name">Tummy</span>
+            <span class="track-dur">3:02</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="5f32woQd5AwVc6iKeSPCcP">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Each Time">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">07</span>
+            <span class="track-name">Each Time</span>
+            <span class="track-dur">2:58</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="5guZozbVCHvHcqnLzatusw">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Verses">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">08</span>
+            <span class="track-name">Verses</span>
+            <span class="track-dur">3:45</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="7j6Bh4ahxOlyykfFuNJCNz">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter So It Goes">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">09</span>
+            <span class="track-name">So It Goes</span>
+            <span class="track-dur">4:07</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+        <li class="track reveal" data-track-id="7mm1KmRATyCQRc9ayFoTU2">
+          <div class="track-row">
+            <button class="play-btn" aria-label="Écouter Intervals">
+              <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+            <span class="track-num">10</span>
+            <span class="track-name">Intervals</span>
+            <span class="track-dur">5:14</span>
+          </div>
+          <div class="track-player"></div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  
+
+
+
+  <section id="discographie">
+    <div class="disco-inner">
+      <h2 class="section-label reveal">Discographie</h2>
+      <div class="disco-grid">
+
+        <div class="disco-card reveal" data-album="0">
+          <div class="disco-card-img">
+            <img src="assets/album-cover--every-dawns-a-mountain.jpeg" alt="Every Dawn's a Mountain" />
+            <div class="disco-card-overlay"><span>Voir</span></div>
+          </div>
+          <div class="disco-card-meta">
+            <h3>Every Dawn's a Mountain</h3>
+            <span>2025</span>
+          </div>
+        </div>
+
+        <div class="disco-card reveal" data-album="1">
+          <div class="disco-card-img">
+            <img src="assets/album-cover-tamino.jpeg" alt="Sahar" />
+            <div class="disco-card-overlay"><span>Voir</span></div>
+          </div>
+          <div class="disco-card-meta">
+            <h3>Sahar</h3>
+            <span>2022</span>
+          </div>
+        </div>
+
+        <div class="disco-card reveal" data-album="2">
+          <div class="disco-card-img">
+            <img src="assets/album-cover-amir.jpg" alt="Amir Deluxe" />
+            <div class="disco-card-overlay"><span>Voir</span></div>
+          </div>
+          <div class="disco-card-meta">
+            <h3>Amir Deluxe</h3>
+            <span>2019</span>
+          </div>
+        </div>
+
+        <div class="disco-card reveal" data-album="3">
+          <div class="disco-card-img">
+            <img src="assets/album-cover-live-at-ancienne-belgique.jpeg" alt="Live at Ancienne Belgique" />
+            <div class="disco-card-overlay"><span>Voir</span></div>
+          </div>
+          <div class="disco-card-meta">
+            <h3>Live at Ancienne Belgique</h3>
+            <span>2019</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+
+  <footer>
+    <span>✦ TAMINO ✦</span>
+  </footer>
+
+ 
+  
+  <div id="modal" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Fermer">✕</button>
+      <img id="modal-img" src="" alt="" />
+      <div class="modal-info">
+        <h2 id="modal-title"></h2>
+        <span id="modal-year"></span>
+        <p id="modal-desc"></p>
+        <ul id="modal-tracks"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
